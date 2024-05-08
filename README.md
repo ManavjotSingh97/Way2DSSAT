@@ -5,11 +5,10 @@ This is a package to create DSSAT input files
  Use `Way2DSSAT.SOL("path/to/you/gssurgo.csv")` to create a soil file first. The funciton will save a SG.SOL file. It also returns a dictionary of soil depth:SDUL which will be used as intial conditions in the Xfile. a string of MUKEYS of all the soil profiles created. 
  If you have multiple soil profiles in the csv exported from GSSURGO data, different soil profiles will be created with name convention of soil ID as "SGG"+"MUKEY".eg. GSS2733103.
  
-Since the funciton is designed to handle the csv generated from gSSURGO soil database. It is aware of the column names which the gSSURGO arcmap toolbox generates. Thus no need to remove any columns containing .pct string in the column name. 
+Since the funciton is designed to handle the csv generated from gSSURGO soil database. It is aware of the column names which the gSSURGO arcmap toolbox generates. Thus no need to remove any columns containing 'pct' string in the column name. 
 
 **Columns required**:
-
-        * path to your .csv file containing the data from gSSURGO. Must have the following columns(and other related depths)
+ 
         * WC15Bar_DCP_0to5
         * WC3rdbar_DCP_0to5
         * Clay_DCP_0to5
@@ -20,9 +19,9 @@ Since the funciton is designed to handle the csv generated from gSSURGO soil dat
         * Ksat_DCP_0to5
         * OrgMatter_DCP_0to5
         * MUKEY_DCP_0to5 
+ Similar columns for other depths as well
  
- 
-**Important**Save the returned dicitonary to a variable
+**Important** Save the returned dicitonary to a variable
 For eg.
 returned dictionary is: 
 
