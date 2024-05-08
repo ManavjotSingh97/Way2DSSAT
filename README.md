@@ -1,5 +1,5 @@
 # README
-This is a package to handle DSSAT input and output files
+This is a package to create DSSAT input files
 
 ## ```Way2DSSAT.SOL()``` : Creates DSSAT Soil File (SG.SOL)
  Use `Way2DSSAT.SOL("path/to/you/gssurgo.csv")` to create a soil file first. The funciton will save a SG.SOL file. It also returns a dictionary of soil depth:SDUL which will be used as intial conditions in the Xfile. a string of MUKEYS of all the soil profiles created. 
