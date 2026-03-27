@@ -96,7 +96,7 @@ init_cond = A['GSS2733103'] #Relace with the soil id you get from print(A)
 Xfile(path,init_cond,site_name = '-99',station = 'ABCD',soil = 'GSS2733103',
           crop = 'SB',cultivar = 'NE0006 NECPHA4 2014',planting_date = '24145')
 
-#replace the default information 
+ 
 ```
 > **All the output files are stored in CWD**
 
